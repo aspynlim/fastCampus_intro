@@ -1,0 +1,8 @@
+#top-line {
+  border: none;
+  border-top: 20px dashed plum;
+}
+
+#bottom-line {
+  border: 20px dashed plum;
+}
