@@ -1,0 +1,19 @@
+body {
+  font-size: 3em;
+}
+
+div {
+  background: lightseagreen;
+  /* height: 200px; */
+  width: 800px;
+  padding: 30px;
+  margin: 10px;
+}
+
+span {
+  background: lightcoral;
+  width: 100px;
+  margin: 100px 10px;
+  padding: 20px;
+  display: inline;
+}
