@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form</title>
+</head>
+<body>
+  <form action="/login" autocomplete="off" target="_blank">
+    <input type="radio" name="radio1">Carrot
+    <input type="radio" name="radio1" checked>Purple
+    <input type="radio" name="radio1">Blue
+    <input type="email" name="email" placeholder="이메일을 입력하세요" autofocus>
+    <input type="text">
+    <input type="password" name="password">
+    <input type="checkbox" checked>
+    <input type="reset" value="초기화">
+    <input type="color">
+    <input type="url" placeholder="URL">
+    <label>
+      검색 : <input type="search" placeholder="SEARCH">
+    </label>
+    <input type="range" min="10" max="100" step="10" value="50">
+    <input type="file" multiple>
+    <!-- image를 제출버튼으로 활용 가능 -->
+    <!-- <input type="image" src="../example_pics/img/heropy.png" alt="heropy">  -->
+    <button type="submit">Login</button>
+  </form>
+  <p></p>
+  <form action="/logout" id="logout-form" novalidate></form>
+  <input type="number" value="1234" step="3" form="logout-form" max="8">
+  <input type="submit" value="logout" form="logout-form">
+  <p></p>
+  <!-- 라벨 가능 요소를 참조 -->
+  <input type="checkbox" id="user-agreement" />
+  <!-- "for"를 제거하면 글씨를 클릭해도 checkbox가 클릭 안 됨 -->
+  <label for="user-agreement">동의하십니까?</label>
+
+  <!-- 라벨 가능 요소를 포함 / 주로 쓰이는 방법 -->
+  <label><input type="checkbox" />동의하십니까?</label>
+  <p></p>
+  <button onclick="doIt()">Click !</button>
+  <textarea name="" id="" cols="20" rows="10" placeholder="설명을 입력하세요" readonly></textarea>
+  <p></p>
+  <form>
+    <fieldset>
+      <legend>Coffee Size</legend>
+      <label>
+          <input type="radio" name="size" value="tall" />
+          Tall
+      </label>
+      <label>
+          <input type="radio" name="size" value="grande" />
+          Grande
+      </label>
+      <label>
+          <input type="radio" name="size" value="venti" />
+          Venti
+      </label>
+    </fieldset>
+  </form>
+  <p></p>
+  <select name="cafe" multiple size="5">
+    <optgroup label="Coffee">
+      <option selected>Americano</option>
+      <option>Caffe Mocha</option>
+      <option label="Cappuccino" value="Cappuccino"></option>
+    </optgroup>
+    <optgroup label="Latte" disabled>
+      <option>Caffe Latte</option>
+      <option>Vanilla Latte</option>
+    </optgroup>
+    <optgroup label="Smoothie">
+      <option>Plain</option>
+      <option>Strawberry</option>
+      <option>Banana</option>
+      <option>Mango</option>
+    </optgroup>
+  </select>
+  <p></p>
+  <input type="text" list="fruits">
+  <datalist id="fruits">
+    <option>Apple</option>
+    <option>Orange</option>
+    <option>Banana</option>
+    <option>Mango</option>
+    <option>Fineapple</option>
+  </datalist>
+  <p></p>
+  <progress value="70" max="100">70 %</progress>
+  <progress value="0.7">70 %</progress>
+  <progress id="control-bar" value="0" max="100"></progress>
+  <script>
+    function doIt() {
+      alert('clicked!');
+    }
+
+    const progress = document.querySelector('#control-bar');
+    const interval = setInterval(function() {
+      progress.value += 10;
+      if (progress.value >= 100) clearInterval(interval);
+    }, 1000);
+  </script>
+</body>
+</html>
