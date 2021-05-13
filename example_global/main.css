@@ -1,0 +1,11 @@
+.section {
+  width: 200px;
+  height: 100px;
+  background: turquoise;
+}
+
+#special {
+  width: 500px;
+  height: 100px;
+  background: tomato;
+}
