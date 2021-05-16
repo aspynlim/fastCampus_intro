@@ -1,0 +1,21 @@
+html {
+  font-size: 16px;
+}
+
+body * {
+  border: 2px solid;
+  font-size: 30px;
+}
+
+.container4 {
+  width: 20rem;
+  font-size: 1rem;
+}
+
+.parent4 {
+  font-size: 2rem;
+}
+
+.child4 {
+  font-size: 4rem;
+}

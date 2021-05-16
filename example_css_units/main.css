@@ -1,0 +1,45 @@
+body * {
+  border: 2px solid;
+}
+
+.container {
+  width: 300px;
+}
+
+.parent {
+  width: 150px;
+}
+
+.child {
+  width: 75px;
+}
+
+.container2 {
+  width: 300px;
+}
+
+.parent2 {
+  /* 부모 요소에 영향을 받음 */
+  width: 50%;
+}
+
+.child2 {
+  /* 부모 요소에 영향을 받음 */
+  width: 50%;
+}
+
+.container3 {
+  /* 자기 자신의 font-size에 영향을 받음 */
+  width: 20em;
+  font-size: 15px;
+}
+
+.parent3 {
+  /* width: 15em; */
+  font-size: 2em;
+}
+
+.child3 {
+  /* width: 7.5em; */
+  font-size: 2em;
+}
