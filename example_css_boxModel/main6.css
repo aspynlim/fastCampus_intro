@@ -1,0 +1,43 @@
+body {
+  display: flex;
+}
+
+div {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+  border-color: orange;
+  border-width: 5px;
+}
+
+.box1 {
+  border-style: solid;
+}
+
+.box2 {
+  border-style: dotted;
+}
+
+.box3 {
+  border-style: dashed;
+}
+
+.box4 {
+  border-style: double;
+}
+
+.box5 {
+  border-style: groove;
+}
+
+.box6 {
+  border-style: ridge;
+}
+
+.box7 {
+  border-style: inset;
+}
+
+.box8 {
+  border-style: outset;
+}

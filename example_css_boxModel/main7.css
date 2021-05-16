@@ -1,0 +1,16 @@
+body {
+  display: flex;
+}
+
+div {
+  width: 100px;
+  height: 100px;
+  background: lightgray;
+  padding: 20px;
+  border: 5px solid green;
+}
+
+.box2 {
+  box-sizing: border-box;
+  margin-left: 20px;
+}

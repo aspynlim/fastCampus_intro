@@ -1,0 +1,15 @@
+body {
+  display: flex;
+}
+
+div {
+  width: 100px;
+  height: 100px;
+  background: lightgreen;
+  box-sizing: border-box;
+}
+
+.extra {
+  padding: 20px;
+  margin-left: 20px;
+}

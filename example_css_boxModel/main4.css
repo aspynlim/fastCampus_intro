@@ -1,0 +1,17 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.parent {
+  width: 100px;
+  height: 100px;
+  background: gray;
+}
+
+.child {
+  width: 50px;
+  height: 50px;
+  background: tomato;
+  margin-top: 50px;
+}

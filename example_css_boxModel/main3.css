@@ -1,0 +1,11 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.child {
+  width: 50px;
+  height: 50px;
+  background: tomato;
+  margin: 50px;
+}
