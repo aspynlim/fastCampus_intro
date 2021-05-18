@@ -1,0 +1,20 @@
+.heropy {
+  width: 500px;
+  height: 500px;
+  background: url("https://heropy.blog/css/images/logo.png");
+  text-indent: -9999px; /* 화면 밖에 text 가 존재하지만 화면에 안 보이게 한다는 의미 */
+}
+
+p {
+  font-size: 2em;
+  /* font-style: italic; */
+  /* line-height: 32px; */
+  /* line-height: 2; */
+  line-height: 1.4;
+  text-align: left;
+  text-decoration: overline;
+  text-indent: -50px;
+  padding-left: 100px;
+  letter-spacing: 10px;
+  word-spacing: 30px;
+}
