@@ -1,0 +1,35 @@
+.clearfix::after {
+  content: "";
+  clear: both;
+  /* ::before & ::after inline 속성을 가지고 있어서, 줄바꿈 해주기 위해 */
+  display: block;
+}
+
+.box {
+  width: 150px;
+  height: 100px;
+  background: lightseagreen;
+  color: white;
+  font-weight: bold;
+  margin: 10px;
+  font-size: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  float: right;
+}
+
+.extra {
+  clear: both;
+}
+
+.parent {
+  overflow: hidden;
+}
+
+.child {
+  float: left;
+}
