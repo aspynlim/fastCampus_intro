@@ -1,0 +1,36 @@
+.color {
+  width: 200px;
+  height: 100px;
+  background-color: turquoise;
+}
+
+.box {
+  background-image:
+    url("https://heropy.blog/css/images/vendor_icons/css3.png"),
+    url("https://heropy.blog/css/images/vendor_icons/html5.png"),
+    url("https://heropy.blog/css/images/vendor_icons/javascript.png");
+  width: 500px;
+  height: 250px;
+  border: 2px dashed lightcoral;
+}
+
+.box2 {
+  width: 500px;
+  height: 350px;
+  background-image: url("https://heropy.blog/css/images/logo.png");
+  background-size: 100px;
+  background-repeat: repeat-x;
+}
+
+.box3 {
+  width: 400px;
+  height: 200px;
+  background-image: url("https://heropy.blog/css/images/logo.png");
+  border: 2px dashed lightcoral;
+  background-size: 100px;
+  background-repeat: no-repeat;
+  /* background-position: right bottom; */
+  /* background-position: 150px 50px; */
+  /* background-position: center; */
+  background-position: 100% 100%;
+}
