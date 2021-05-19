@@ -1,0 +1,42 @@
+.grand-parent {
+  width: 200px;
+  height: 200px;
+  padding: 30px 30px 30px 30px;
+  border: 4px dashed lightgray;
+}
+
+.parent {
+  width: 170px;
+  height: 170px;
+  border: 4px dashed gray;
+  position: relative;
+}
+
+#orange {
+  background: orange;
+}
+
+.child {
+  width: 50px;
+  height: 50px;
+  background: seagreen;
+  border-radius: 10px;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+}
+
+.absolute {
+  position: absolute;
+  top: 25px;
+  left: 50px;
+}
+
+.fixed {
+  position: fixed;
+  bottom: 25px;
+  right: 50px;
+}
