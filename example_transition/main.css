@@ -1,0 +1,31 @@
+.box {
+  width: 100px;
+  height: 100px;
+  background: bisque;
+  border: 2px solid lightcoral;
+  margin: 50px;
+  transition: 1s steps(4) 0.5s;
+}
+
+.box:hover {
+  width: 300px;
+  background: dodgerblue;
+  border: 2px dashed darkblue;
+}
+
+.box2 {
+  width: 100px;
+  height: 100px;
+  background: lightblue;
+  border: 1px solid teal;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  transition: 1s;
+  margin: 50px
+}
+
+.box2:hover {
+  transform: translate(100px, 100px) scale(0.5) skewX(20deg);
+}
