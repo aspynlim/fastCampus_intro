@@ -1,0 +1,102 @@
+.container {
+  border: 4px solid;
+  display: flex;
+}
+
+.item {
+  width: 100px;
+  height: 100px;
+  background: greenyellow;
+  border: 4px dashed purple;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item1 {
+  order: 3;
+}
+
+.item4 {
+  order: -1;
+}
+
+.container2 {
+  border: 4px solid;
+  display: flex;
+  font-size: 30px;
+}
+
+.test {
+  /* width: 100px; */
+  height: 100px;
+  background: greenyellow;
+  border: 4px dashed purple;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.test1 {
+  flex-grow: 1;
+}
+
+.test2 {
+  width: 100px;
+}
+
+.container3 {
+  border: 4px solid;
+  display: flex;
+  font-size: 20px;
+  margin-top: 50px;
+}
+
+.play {
+  /* width: 100px; */
+  height: 100px;
+  background: greenyellow;
+  border: 4px dashed purple;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* flex-grow: 1;
+  flex-basis: 0; */
+  flex: 1 1 0;
+}
+
+.play3 {
+  flex-grow: 2;
+}
+
+.container4 {
+  border: 4px solid;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 30px;
+  height: 400px;
+}
+
+.self {
+  width: 100px;
+  height: 100px;
+  background: greenyellow;
+  border: 4px dashed purple;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.self2 {
+  align-self: flex-end;
+}
+
+.self4 {
+  align-self: center;
+}
+
+.self7 {
+  align-self: auto;
+  height: auto;
+}
