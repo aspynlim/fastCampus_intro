@@ -1,0 +1,21 @@
+.container {
+  $size: 100px;
+  .item {
+    width: $size * 3;
+    height: $size;
+    background: tomato;
+    padding: {
+      top: 40px;
+      left: 30px;
+    };
+    font: {
+      weight: bold;
+      size: 50px;
+      family: sans-serif;
+    };
+    margin: {
+      top: 10px;
+      left: 20px;
+    };
+  }
+}
