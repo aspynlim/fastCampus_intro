@@ -44,8 +44,40 @@
   <title>GitHub</title>
 </head>
 <body>
-  <div class="btn">SUCCESS</div>
-  <div class="btn btn--primary">SUCCESS</div>
-  <input type="text" class="input--text" placeholder="Search GitHub">
+<div class="body__container">
+  <!-- HEADER -->
+  <header class="section">
+    <div class="inner">
+      <div class="menu-group">
+        <div class="logo">
+          <a href="#">GitHub</a>
+        </div>
+        <ul class="main-menu">
+          <li><a href="#">Personal</a></li>
+          <li><a href="#">Open Source</a></li>
+          <li><a href="#">Business</a></li>
+          <li><a href="#">Explore</a></li>
+        </ul>
+      </div>
+
+      <div class="sign-group">
+        <div class="btn-group">
+          <a href="#" class="btn sign-in">Sign In</a>
+          <a href="#" class="btn btn--primary sign-up">Sign Up</a>
+        </div>
+        <form id="search-form" method="POST" action="#">
+          <input type="text" id="search" class="input--text" placeholder="Search GitHub" />
+          <!-- submit 버튼은 숨길 예정 -->
+          <input type="submit" value="submit" /> 
+        </form>
+        <ul class="sub-menu">
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Support</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+</div>
 </body>
 </html>

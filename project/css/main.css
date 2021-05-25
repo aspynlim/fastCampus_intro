@@ -1,10 +1,58 @@
 @charset "UTF-8";
+header {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.7);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.75);
+  background: #fff;
+}
+header .inner {
+  max-width: 980px;
+  height: 78px;
+  margin: 0 auto;
+}
+header .inner .menu-group {
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+header .inner .menu-group .logo {
+  margin-right: 10px;
+}
+header .inner .menu-group .logo a {
+  background: url("../img/logo.svg");
+  width: 32px;
+  height: 32px;
+  display: block;
+  text-indent: -9999px;
+}
+header .inner .menu-group .logo a:hover {
+  background: url("../img/logo_on.svg");
+}
+header .inner .menu-group .main-menu {
+  display: flex;
+}
+header .inner .menu-group .main-menu li a {
+  display: block;
+  padding: 10px;
+  background: chocolate;
+  color: #3c4146;
+}
+header .inner .menu-group .main-menu li a:hover {
+  color: #4078c0;
+}
+header .inner .sign-group {
+  display: flex;
+}
+
 .body__container {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 400;
   color: #333;
   box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
 }
 
 .btn {
@@ -19,6 +67,7 @@
   font-weight: 700;
   cursor: pointer;
   position: relative;
+  color: #333;
 }
 .btn:hover::before {
   content: "";
