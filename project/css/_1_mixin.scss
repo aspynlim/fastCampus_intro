@@ -1,0 +1,29 @@
+@mixin a--tag($padding, $font-size: 16px) {
+  padding: $padding;
+  font-size: $font-size;
+  
+  display: block;
+  // background: lightcyan;
+  color: #3c4146;
+
+  &:hover {
+    color: #4078c0;
+  }
+}
+
+@mixin inner {
+  max-width: 1000px;
+  margin: 0 auto; // 반드시 가로 size 가 정해져 있어야 함
+  position: relative;
+  display: flex;
+}
+
+@mixin summary($font-size, $font-weight, $color, $line-height) {
+  font: {
+    size: $font-size;
+    weight: $font-weight;
+  }
+  color: $color;
+  line-height: $line-height;
+  @content;
+}

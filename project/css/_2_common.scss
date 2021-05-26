@@ -1,10 +1,17 @@
 // COMMON
-.body__container {
+* {
+  box-sizing: border-box;
+}
+
+body {
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
   font-weight: 400;
   color: #333;
-  box-sizing: border-box;
+}
+
+section {
+  position: relative;
 }
 
 a {
@@ -71,4 +78,9 @@ a {
   &::-webkit-input-placeholder { color: #cacaca; }
   &::-ms-input-placeholder { color: #cacaca; }
   &::-moz-input-placeholder { color: #cacaca; }
+}
+
+// Summary
+.summary {
+
 }

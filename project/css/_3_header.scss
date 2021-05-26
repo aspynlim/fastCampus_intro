@@ -4,11 +4,9 @@ header {
   background: #fff;
 }
 
-.inner {
-  max-width: 1000px;
+#header-inner {
+  @include inner;
   height: 78px;
-  margin: 0 auto; // 반드시 가로 size 가 정해져 있어야 함
-  display: flex;
   justify-content: space-between;
 }
 

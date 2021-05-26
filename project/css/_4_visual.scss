@@ -1,0 +1,76 @@
+.section--visual {
+  background-image: url("../img/bg.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  background-size: cover;
+
+  &::before {
+    content: "";
+    position: absolute;
+    // 혹은 top, left, bottom, right 을 모두 0 으로 해도 됨
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.3);
+  }
+}
+
+#visual-inner {
+  @include inner;
+  padding: 160px 0;
+}
+
+// LEFT
+.summary {
+  flex-basis: 0; // flex item 요소가 flex-grow 또는 flex-shrink 속성에 의해 팽창/수축하기 이전의 기준 크기를 명시하는 속성
+  flex-grow: 1;
+  margin-right: 90px
+}
+
+#visual__summary__title {
+  @include summary(54px, 300, #fff, 1.25);
+  margin-bottom: 18px;
+  text-shadow: 0 1px 1px rgba(0,0,0,.25),
+               0 1px 25px rgba(0,0,0,.75);
+}
+
+#visual__summary__description {
+  @include summary(26px, 300, #fff, 1.5);
+  text-shadow: 0 1px 1px rgba(0,0,0,.25),
+               0 1px 25px rgba(0,0,0,.75);
+}
+
+// RIGHT
+#sign-form {
+  width: 340px;
+  margin-top: 16px;
+
+  li {
+    margin-bottom: 17px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .input--text {
+    width: 100%;
+    height: 40px;
+  }
+
+  & [type="submit"] {
+    width: 100%;
+    height: 62px;
+    padding: 0 25px;
+    font-size: 20px;
+    justify-content: center;
+  }
+}
+
+.caption {
+  @include summary(12px, 100, rgba(255,255,255,.6), 1.5);
+  display: block;
+  margin-top: 5px;
+  text-align: center;
+}
