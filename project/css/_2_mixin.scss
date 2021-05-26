@@ -1,0 +1,12 @@
+@mixin a--tag($padding, $font-size: 16px) {
+  padding: $padding;
+  font-size: $font-size;
+  
+  display: block;
+  // background: lightcyan;
+  color: #3c4146;
+
+  &:hover {
+    color: #4078c0;
+  }
+}

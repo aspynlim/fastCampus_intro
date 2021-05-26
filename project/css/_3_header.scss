@@ -1,0 +1,85 @@
+header {
+  border-bottom: 1px solid rgba(0,0,0,.7);
+  box-shadow: 0 0 5px rgba(0,0,0,.75);
+  background: #fff;
+}
+
+.inner {
+  max-width: 1000px;
+  height: 78px;
+  margin: 0 auto; // 반드시 가로 size 가 정해져 있어야 함
+  display: flex;
+  justify-content: space-between;
+}
+
+// LEFT
+.menu-group {
+  display: flex;
+  // height: 100%;
+  align-items: center;
+}
+
+.logo {
+  margin-right: 10px;
+
+  a {
+    background: url("../img/logo.svg");
+    width: 32px;
+    height: 32px;
+    display: block;
+    text-indent: -9999px;
+
+    &:hover {
+      background: url("../img/logo_on.svg");
+    }
+  }
+}
+
+.main-menu {
+  display: flex;
+
+  li {
+    a {
+      @include a--tag(10px);
+    }
+  }
+}
+
+// RIGHT
+.sign-group {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+
+.btn-group {
+  display: flex;
+
+  .sign-in {
+    margin-right: 4px;
+  }
+}
+
+#search-form {
+  margin-right: 12px;
+}
+
+#search {
+  width: 160px;
+  font-size: 14px;
+
+  & + [type="submit"] {
+    display: none;
+  }
+}
+
+.sub-menu {
+  display: flex;
+  margin-right: 10px;
+
+  li {
+    a {
+      @include a--tag(8px, 13px);
+    }
+  }
+}
