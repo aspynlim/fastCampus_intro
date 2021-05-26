@@ -18,7 +18,7 @@
   display: flex;
 }
 
-@mixin summary($font-size, $font-weight, $color, $line-height) {
+@mixin summary($font-size, $font-weight, $color: $main-black, $line-height) {
   font: {
     size: $font-size;
     weight: $font-weight;

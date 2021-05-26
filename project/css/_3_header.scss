@@ -1,10 +1,10 @@
 header {
   border-bottom: 1px solid rgba(0,0,0,.7);
   box-shadow: 0 0 5px rgba(0,0,0,.75);
-  background: #fff;
+  background: $main-white;
 }
 
-#header-inner {
+#inner--header {
   @include inner;
   height: 78px;
   justify-content: space-between;

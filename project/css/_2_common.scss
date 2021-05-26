@@ -7,7 +7,7 @@ body {
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
   font-weight: 400;
-  color: #333;
+  color: $main-black;
 }
 
 section {
@@ -31,7 +31,7 @@ a {
   font-weight: 700;
   cursor: pointer;
   position: relative;
-  color: #333;
+  color: $main-black;
 
   &:hover::before {
     content: "";
@@ -80,7 +80,8 @@ a {
   &::-moz-input-placeholder { color: #cacaca; }
 }
 
-// Summary
-.summary {
-
+.clearfix::after{
+  content: "";
+  clear: both;
+  display: block;
 }

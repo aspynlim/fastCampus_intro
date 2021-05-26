@@ -46,7 +46,7 @@
 <body>
   <!-- HEADER -->
   <header class="section">
-    <div id="header-inner">
+    <div id="inner--header">
       <div class="menu-group">
         <div class="logo">
           <a href="#">GitHub</a>
@@ -80,14 +80,14 @@
 
   <!-- VISUAL -->
   <section class="section section--visual">
-    <div id="visual-inner">
-      <div class="summary">
-        <div id="visual__summary__title">
+    <div id="inner--visual">
+      <div id="summary--visual">
+        <h2 id="summary__title--visual">
           How people build&nbsp;software
-        </div>
-        <div id="visual__summary__description">
+        </h2>
+        <p id="summary__description--visual">
           Millions of developers use GitHub to build personal projects, support their businesses, and&nbsp;work together on open source technologies.
-        </div>
+        </p>
       </div>
       <form id="sign-form" method="POST" action="">
         <ul>
@@ -103,6 +103,51 @@
           </li>
         </ul>      
       </form>
+    </div>
+  </section>
+
+  <!-- FEATURE -->
+  <section class="section section--feature">
+    <div id="summary--feature">
+      <h2 id="summary__title--feature">
+        Welcome home, developers
+      </h2>
+      <p id="summary__description--feature">
+        GitHub fosters a fast, flexible, and collaborative development process that lets you work on your own or with others.
+      </p>
+    </div>
+
+    <div class="video">
+      <div class="video-ratio">
+        <iframe width="994" height="559" src="https://www.youtube.com/embed/afvT1c1ii0c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <div class="tiles">
+      <div class="inner--tiles">
+        <ul class="clearfix">
+          <li>
+            <img src="img/feature-tile__build.png" alt="Build">
+            <h3>For everything you build</h3>
+            <p>Host and manage your code on GitHub. You can keep your work private or share it with the world.</p>
+          </li>
+          <li>
+            <img src="img/feature-tile__work.png" alt="Work">
+            <h3>A better way to work</h3>
+            <p>From hobbyists to professionals, GitHub helps developers simplify the way they build software.</p>
+          </li>
+          <li>
+            <img src="img/feature-tile__projects.png" alt="Projects">
+            <h3>Millions of projects</h3>
+            <p>GitHub is home to millions of open source projects. Try one out or get inspired to create your own.</p>
+          </li>
+          <li>
+            <img src="img/feature-tile__platform.png" alt="Platform">
+            <h3>One platform, from start to finish</h3>
+            <p>With hundreds of integrations, GitHub is flexible enough to be at the center of your development process.</p>
+          </li>          
+        </ul>
+      </div>
     </div>
   </section>
 </body>
