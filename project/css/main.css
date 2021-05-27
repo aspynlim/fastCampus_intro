@@ -344,4 +344,43 @@ iframe {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 
+.section--pricing {
+  background: linear-gradient(#f5f5f5, #fff);
+}
+
+#inner--pricing {
+  max-width: 1000px;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  padding: 80px 0;
+}
+
+.card {
+  display: flex;
+  border: 1px solid #e5e5e5;
+  border-radius: 6px;
+}
+
+.cell {
+  padding: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cell1 .btn {
+  height: 50px;
+  font-size: 16px;
+}
+
+.cell2 {
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 1.5;
+  flex-grow: 1;
+  flex-basis: 0;
+  border-left: 1px solid #e5e5e5;
+}
+
 /*# sourceMappingURL=main.css.map */
