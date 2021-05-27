@@ -1,0 +1,51 @@
+#inner--footer {
+  @include inner;
+  padding: 50px 0;
+  border-top: 1px solid #eee;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+
+.site-links {
+  display: flex;
+  align-items: center;
+
+  li {
+    font: {
+      size: 12px;
+    }
+    margin-right: 10px;
+    color: $main-gray;
+
+    a {
+      color: #4078c0;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+#logo--footer {
+  margin: 0;
+
+  svg {
+    &:hover {
+      fill: #4078c0;
+    }
+  }
+}
+
+// Float 을 사용했다면 중앙 배치는 다음과 같이 진행
+// #logo--footer {
+//   // inner 에 relative 가 선언되어 있으므로 작동됨
+//   position: absolute;
+//   margin: auto;
+//   top: 0;
+//   bottom: 0;
+//   left: 0;
+//   right: 0;
+//   width: 24px;
+//   height: 24px;
+// }

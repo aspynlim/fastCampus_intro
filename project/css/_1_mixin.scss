@@ -16,6 +16,7 @@
   margin: 0 auto; // 반드시 가로 size 가 정해져 있어야 함
   position: relative;
   display: flex;
+  @content;
 }
 
 @mixin summary($font-size, $font-weight, $color: $main-black, $line-height) {

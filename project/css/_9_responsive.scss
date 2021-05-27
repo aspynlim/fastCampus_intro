@@ -1,0 +1,93 @@
+@media (max-width: 1024px) {
+  .section {
+    .inner {
+      max-width: none;
+      height: auto;
+      padding: 0 20px;
+      flex-direction: column;
+    }
+    // header (.menu-group & .sign-group)에 float 적용한 경우
+    // header .menu-group,
+    // header .sign-group {
+    //   float: none;
+    // }
+    .menu-group {
+      flex-direction: column;
+    }
+    .logo {
+      padding: 12px 0;
+      width: 100%;
+      margin: 0;
+    }
+    .main-menu {
+      // display: block; // 이렇게 해도 수직 정렬로 바뀌긴 함
+      flex-direction: column;
+      margin-bottom: 10px;
+      width: 100%;
+
+      li {
+        border-top: 1px solid #252525;
+
+        a {
+          padding: 16px 0;
+        }
+      }
+    }
+
+    .sign-group {
+      flex-direction: column;
+      // 위 좌/우 아래
+      padding: 10px 0 20px;
+    }
+
+    .btn-group {
+      flex-direction: column;
+      width: 100%;
+
+      a {
+        display: flex;
+        justify-content: center;
+      }
+      .sign-in {
+        margin-bottom: 12px;
+      }
+    }
+
+    .sub-menu {
+      margin-top: 12px;
+      margin-right: 0;
+      justify-content: center;
+    }
+    .toggle {
+      display: none;
+
+      &.on {
+        display: block;
+      }
+    }
+  }
+
+  #search-form {
+    margin-top: 12px;
+    margin-right: 0;
+    width: 100%;
+  }
+
+  #search {
+    width: 100%;
+    height: 42px;
+    text-align: center;
+  }
+
+  #toggle-btn {
+    background: url("../img/toggle-btn.svg");
+    width: 18px;
+    height: 24px;
+    // 상위 요소에 relative 값 있음
+    position: absolute;
+    top: 16px;
+    right: 20px;
+    cursor: pointer;
+    text-indent: -9999px;
+  }
+}

@@ -4,7 +4,7 @@ header {
   background: $main-white;
 }
 
-#inner--header {
+.inner--header {
   @include inner;
   height: 78px;
   justify-content: space-between;

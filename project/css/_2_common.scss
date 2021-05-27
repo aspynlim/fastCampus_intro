@@ -80,12 +80,6 @@ a {
   &::-moz-input-placeholder { color: #cacaca; }
 }
 
-.clearfix::after{
-  content: "";
-  clear: both;
-  display: block;
-}
-
 .summary__title {
   @include summary(54px, 300, $main-black, 1.25);
   margin-bottom: 18px;
@@ -95,3 +89,16 @@ a {
   @include summary(26px, 300, $main-gray, 1.5);
 }
 
+
+// Float 을 사용한다면
+.clearfix::after{
+  content: "";
+  clear: both;
+  display: block;
+}
+.float--left {
+  float: left;
+}
+.float--right {
+  float: right;
+}
