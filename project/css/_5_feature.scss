@@ -10,15 +10,6 @@
   text-align: center;
 }
 
-#summary__title--feature {
-  @include summary(54px, 300, $main-black, 1.25);
-  margin-bottom: 18px;
-}
-
-#summary__description--feature {
-  @include summary(26px, 300, $main-gray, 1.5);
-}
-
 // 2. Video
 .video {
   max-width: 650px;

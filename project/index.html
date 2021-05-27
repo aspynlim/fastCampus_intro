@@ -109,10 +109,10 @@
   <!-- FEATURE -->
   <section class="section section--feature">
     <div id="summary--feature">
-      <h2 id="summary__title--feature">
+      <h2 class="summary__title">
         Welcome home, developers
       </h2>
-      <p id="summary__description--feature">
+      <p class="summary__description">
         GitHub fosters a fast, flexible, and collaborative development process that lets you work on your own or with others.
       </p>
     </div>
@@ -150,5 +150,24 @@
       </div>
     </div>
   </section>
+
+  <!-- Where is -->
+  <section class="section section--where-is">
+    <div id="inner--where-is">
+      <div id="summary--where-is">
+        <h2 class="summary__title">
+          Where is GitHub?
+        </h2>
+        <p class="summary__description">
+          GitHub is where people build software. More than 18 million people use GitHub to discover, fork, and contribute to over 48 million projects.
+        </p>
+      </div>
+
+      <div id="map"></div>
+    </div>
+  </section>
+  <script src="js/where-is.js"></script>
+  <!-- 로딩이 다 된다음에 호출하겠다 -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCTQIlxBn5AfKGvsfJiormAE1esN3fcCkg&callback=initMap" async defer></script>
 </body>
 </html>
