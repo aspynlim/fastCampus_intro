@@ -1,4 +1,4 @@
-#inner--footer {
+.inner--footer {
   @include inner;
   padding: 50px 0;
   border-top: 1px solid #eee;
@@ -27,7 +27,7 @@
   }
 }
 
-#logo--footer {
+.logo--footer {
   margin: 0;
 
   svg {

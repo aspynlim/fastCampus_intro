@@ -1,0 +1,42 @@
+@media (max-width: 768px) {
+  // Common
+  .summary__title {
+    font-size: 34px !important;
+  }
+  
+  .summary__description {
+    font-size: 22px;
+  }
+
+  // Feature
+  .section--feature {
+    .inner--tiles {
+      ul {
+        grid-template-columns: 1fr;
+        border-right: none;
+        border-bottom: 1px solid #e5e5e5;
+      }
+    }
+  }
+
+  // Where is 
+  #map {
+    // width: 100% 였는데 바꿈
+    width: auto;
+    margin: 40px -20px 0 -20px;
+    border-left: 0;
+    border-right: 0;
+  }
+
+  // Pricing
+  .section--pricing {
+    .card {
+      flex-direction: column;
+
+      .cell2 {
+        border-left: 0;
+        border-top: 1px solid #e5e5e5;
+      }
+    }
+  }
+}

@@ -41,6 +41,9 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
   <!-- <link rel="stylesheet" href="css/reset.css"> -->
   <link rel="stylesheet" href="css/main.css">
+
+  <!-- Media Query 적용 (max-width: 1024) -->
+  <!-- <link rel="stylesheet" media="(max-width: 1024)" href="css/main_medium.css"> -->
   <title>GitHub</title>
 </head>
 <body>
@@ -83,15 +86,15 @@
   <!-- VISUAL -->
   <section class="section section--visual">
     <div class="inner--visual inner">
-      <div id="summary--visual">
-        <h2 id="summary__title--visual">
+      <div class="summary--visual">
+        <h2 class="summary__title--visual summary__title">
           How people build&nbsp;software
         </h2>
-        <p id="summary__description--visual">
+        <p class="summary__description--visual summary__description">
           Millions of developers use GitHub to build personal projects, support their businesses, and&nbsp;work together on open source technologies.
         </p>
       </div>
-      <form id="sign-form" method="POST" action="">
+      <form class="sign-form" method="POST" action="">
         <ul>
           <li><input type="text" class="input--text" placeholder="Pick a username"></li>
           <li><input type="email" class="input--text" placeholder="Your email address"></li>
@@ -110,7 +113,7 @@
 
   <!-- FEATURE -->
   <section class="section section--feature">
-    <div id="summary--feature">
+    <div class="summary--feature">
       <h2 class="summary__title">
         Welcome home, developers
       </h2>
@@ -170,7 +173,7 @@
   </section>
 
   <section class="section section--pricing">
-    <div id="inner--pricing">
+    <div class="inner--pricing inner">
       <div class="card">
         <div class="cell cell1">
           <a href="#" class="btn btn--primary">Sign Up for GitHub</a>
@@ -184,7 +187,7 @@
 
   <footer class="section">
      <!-- float 사용할꺼면 "clearfix" class 부여 -->
-    <div id="inner--footer">
+    <div class="inner--footer inner">
       <!-- float 사용할꺼면 "float--right" class 부여 -->
       <ul class="site-links">
         <li><a href="#">Contact GitHub</a></li>
@@ -195,7 +198,7 @@
         <li><a href="#">About</a></li>
       </ul>
 
-      <a href="#" id="logo--footer">
+      <a href="#" class="logo--footer">
         <svg version="1.1"
           xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
           width="24"

@@ -2,7 +2,7 @@
   background: linear-gradient(#f5f5f5, $main-white);
 }
 
-#inner--pricing {
+.inner--pricing {
   @include inner;
   padding: 80px 0;
 }

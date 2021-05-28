@@ -81,3 +81,16 @@ header {
     }
   }
 }
+
+#toggle-btn {
+  display: none;
+  background: url("../img/toggle-btn.svg");
+  width: 18px;
+  height: 24px;
+  // 상위 요소에 relative 값 있음
+  position: absolute;
+  top: 16px;
+  right: 20px;
+  cursor: pointer;
+  text-indent: -9999px;
+}
